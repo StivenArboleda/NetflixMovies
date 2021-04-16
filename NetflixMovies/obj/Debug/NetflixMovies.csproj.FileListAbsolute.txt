@@ -1,0 +1,9 @@
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\bin\Debug\NetflixMovies.exe.config
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\bin\Debug\NetflixMovies.exe
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\bin\Debug\NetflixMovies.pdb
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csprojAssemblyReference.cache
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.Properties.Resources.resources
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csproj.GenerateResource.cache
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.exe
+C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.pdb
