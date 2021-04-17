@@ -11,8 +11,39 @@ namespace NetflixMovies
     {
         private static List<Movies> movie = new List<Movies>();
 
+        // de cadena 
+
+        public List<Movies> IdMovieList(string id)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.MovieId.Equals(id))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
+
+        public List<Movies> ContryOfOriginMovieList(string org)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.CountryOfOrigin.Equals(org))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
+
         public void loadData()
         {
+
             using (var reader = new StreamReader(@"C:\Users\prestamo\Downloads\archive\netflix_titles.csv"))
             {
                 reader.ReadLine();
