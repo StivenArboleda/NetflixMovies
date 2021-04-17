@@ -72,7 +72,36 @@ namespace NetflixMovies
             }
         }
 
-            public static void Main(String[] args)
+        //numericos
+
+        public List<Movies> ReleaseYearMovieList(int real)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.ReleaseYear >= (real) && (m.ReleaseYear < (real + 5)))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+
+        }
+
+        public List<Movies> DurationMovieList(int mins)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.MinutesOfMovie >= (mins) && (m.MinutesOfMovie < (mins + 10)))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
+        public static void Main(String[] args)
         {
 
         }
