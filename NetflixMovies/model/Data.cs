@@ -23,9 +23,11 @@ namespace NetflixMovies
                 if (m.MovieId.Equals(id))
                 {
                     answer.Add(m);
+
                 }
             }
             return answer;
+
         }
 
         public List<Movies> PublishedDateMovieList(string pub)

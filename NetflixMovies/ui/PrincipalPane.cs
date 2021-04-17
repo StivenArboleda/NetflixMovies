@@ -44,5 +44,30 @@ namespace NetflixMovies.ui
         {
             dataGridView2.DataSource = movie;
         }
+
+        private void PrincipalPane_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            String name = textBox1.Text.ToString();
+            List<Movies> m = new List<Movies>();
+            m = c.dat.IdMovieList(name);
+            for(int i = 1; i<=5376; i++)
+            {
+                string r = (string) dataGridView2.Rows[i].Cells[0].Value;
+                if (!(r.Equals(name))){
+                    dataGridView2.Rows[i].Visible = false;
+                }
+            }
+            textBox1.Text = " ";
+        }
     }
 }
