@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using NetflixMovies.ui;
 
 namespace NetflixMovies
 {
     class Data
     {
-        private static List<Movies> movie = new List<Movies>();
+        public List<Movies> movie = new List<Movies>();
 
         // de cadena 
 
@@ -112,7 +114,7 @@ namespace NetflixMovies
         public void loadData()
         {
 
-            using (var reader = new StreamReader(@"C:\Users\prestamo\Downloads\archive\netflix_titles.csv"))
+            using (var reader = new StreamReader(File.OpenRead(@"C:\Users\prestamo\Downloads\archive\netflix_titles.csv")))
             {
                 reader.ReadLine();
                 while (!reader.EndOfStream)
@@ -138,13 +140,6 @@ namespace NetflixMovies
 
                 }
             }
-        }
-
-
-
-        public static void Main(String[] args)
-        {
-
         }
 
     }
