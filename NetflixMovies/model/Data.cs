@@ -26,6 +26,45 @@ namespace NetflixMovies
             return answer;
         }
 
+        public List<Movies> PublishedDateMovieList(string pub)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.DatePublishedNet.Contains(pub))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
+        public List<Movies> DirectorMovieList(string dir)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.Director.Contains(dir))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
+        public List<Movies> CastMovieList(string cas)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.Cast.Contains(cas))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
 
         public List<Movies> ContryOfOriginMovieList(string org)
         {
@@ -40,6 +79,35 @@ namespace NetflixMovies
             return answer;
         }
 
+
+        //numericos
+
+        public List<Movies> ReleaseYearMovieList(int real)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.ReleaseYear >= (real) && (m.ReleaseYear < (real + 5)))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+
+        }
+
+        public List<Movies> DurationMovieList(int mins)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.MinutesOfMovie >= (mins) && (m.MinutesOfMovie < (mins + 10)))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
 
         public void loadData()
         {
@@ -72,34 +140,7 @@ namespace NetflixMovies
             }
         }
 
-        //numericos
 
-        public List<Movies> ReleaseYearMovieList(int real)
-        {
-            List<Movies> answer = new List<Movies>();
-            foreach (Movies m in movie)
-            {
-                if (m.ReleaseYear >= (real) && (m.ReleaseYear < (real + 5)))
-                {
-                    answer.Add(m);
-                }
-            }
-            return answer;
-
-        }
-
-        public List<Movies> DurationMovieList(int mins)
-        {
-            List<Movies> answer = new List<Movies>();
-            foreach (Movies m in movie)
-            {
-                if (m.MinutesOfMovie >= (mins) && (m.MinutesOfMovie < (mins + 10)))
-                {
-                    answer.Add(m);
-                }
-            }
-            return answer;
-        }
 
         public static void Main(String[] args)
         {
