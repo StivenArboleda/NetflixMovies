@@ -30,6 +30,19 @@ namespace NetflixMovies
 
         }
 
+        public List<Movies> TittleMovieList(string tit)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.Title.Contains(tit))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
         public List<Movies> PublishedDateMovieList(string pub)
         {
             List<Movies> answer = new List<Movies>();

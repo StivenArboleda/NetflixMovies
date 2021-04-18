@@ -14,6 +14,7 @@ namespace NetflixMovies.ui
     {
         OpenFileDialog actual;
         Control c;
+        string searchCriteria;
 
         public PrincipalPane()
         {
@@ -34,7 +35,7 @@ namespace NetflixMovies.ui
             if (actual.ShowDialog() == DialogResult.OK)
             {
                 string path = actual.FileName;
-                MessageBox.Show("Datos cargados correctamente.");
+                MessageBox.Show("Data uploaded correctly.");
                 movie = c.load(path);
                 load(movie);
             }
@@ -59,15 +60,47 @@ namespace NetflixMovies.ui
         {
             String name = textBox1.Text.ToString();
             List<Movies> m = new List<Movies>();
-            m = c.dat.IdMovieList(name);
-            for(int i = 1; i<=5376; i++)
+            switch (searchCriteria)
             {
-                string r = (string) dataGridView2.Rows[i].Cells[0].Value;
-                if (!(r.Equals(name))){
-                    dataGridView2.Rows[i].Visible = false;
-                }
+                case "movieId":
+                    m = c.dat.IdMovieList(name);
+                    break;
+                case "tittle":
+                    m = c.dat.TittleMovieList(name);
+                    break;
+                case "director":
+                    m = c.dat.DirectorMovieList(name);
+                    break;
+                case "cast":
+                    m = c.dat.CastMovieList(name);
+                    break;
+                case "countryOfOrigin":
+                    m = c.dat.ContryOfOriginMovieList(name);
+                    break;
+                case "datePublishedNet":
+                    m = c.dat.PublishedDateMovieList(name);
+                    break;
+                case "releaseYear":
+                    int releaseYear = Int32.Parse(name);
+                    m = c.dat.ReleaseYearMovieList(releaseYear);
+                    break;
+                case "minutesOfMovie":
+                    int minutesOfMovie = Int32.Parse(name); ;
+                    m = c.dat.ReleaseYearMovieList(minutesOfMovie);
+                    break;
+                case "clasification":
+                    m = c.dat.ClasificationMovieList(name);
+                    break;
+                default:
+                    break;
             }
-            textBox1.Text = " ";
+            dataGridView2.DataSource = m;
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            searchCriteria = comboBox1.Text;
         }
     }
 }
