@@ -113,7 +113,24 @@ namespace NetflixMovies
             return answer;
         }
 
-        public void loadData()
+        //categorico
+
+        public List<Movies> ClasificationMovieList(string clas)
+        {
+            List<Movies> answer = new List<Movies>();
+            foreach (Movies m in movie)
+            {
+                if (m.Clasification.Contains(clas))
+                {
+                    answer.Add(m);
+                }
+            }
+            return answer;
+        }
+
+        //loadData
+
+            public void loadData()
         {
 
             using (var reader = new StreamReader(File.OpenRead(@"C:\Users\prestamo\Downloads\archive\netflix_titles.csv")))
