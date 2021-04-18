@@ -21,6 +21,7 @@ namespace NetflixMovies.ui
             InitializeComponent();
             actual = new OpenFileDialog();
             c = new Control();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -55,6 +56,18 @@ namespace NetflixMovies.ui
             foreach (KeyValuePair<string, int> d in dict2)
             {
                 movies2.Points.AddXY(d.Key, d.Value);
+            }
+            Dictionary<string, int> dict3 = c.dat.MoviesByGenre();
+            var movies3 = chart3.Series.Add("Movies");
+            foreach (KeyValuePair<string, int> d in dict3)
+            {
+                movies3.Points.AddXY(d.Key, d.Value);
+            }
+            Dictionary<string, int> dict4 = c.dat.();
+            var movies4 = chart4.Series.Add("Movies");
+            foreach (KeyValuePair<string, int> d in dict4)
+            {
+                movies3.Points.AddXY(d.Key, d.Value);
             }
         }
 
@@ -146,5 +159,11 @@ namespace NetflixMovies.ui
         {
 
         }
+
+        private void chart3_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

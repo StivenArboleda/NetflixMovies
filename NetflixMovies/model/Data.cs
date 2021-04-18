@@ -179,6 +179,45 @@ namespace NetflixMovies
             return answer;
         }
 
+        public Dictionary<string, int> MoviesByGenre()
+        {
+            Dictionary<string, int> answer = new Dictionary<string, int>();
+            movie.ToArray();
+            for (int i = 1; i <= movie.Count-1; i++)
+            {
+                int cont = 0;
+                foreach (Movies m in movie)
+                {
+                    if (m.Clasification.Equals(movie[i]))
+                    {
+                        cont++;
+
+                    }
+                }
+                answer.Add(i+"", cont);
+            }
+            return answer;
+        }
+
+        public Dictionary<string, int> MoviesByDirector()
+        {
+            Dictionary<string, int> answer = new Dictionary<string, int>();
+            movie.ToArray();
+            for (int i = 1; i <= movie.Count - 1; i++)
+            {
+                int cont = 0;
+                foreach (Movies m in movie)
+                {
+                    if (m.Clasification.Equals(movie[i]))
+                    {
+                        cont++;
+
+                    }
+                }
+                answer.Add(i + "", cont);
+            }
+            return answer;
+        }
 
         //loadData
 
