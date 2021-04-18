@@ -44,6 +44,12 @@ namespace NetflixMovies.ui
         private void load(List<Movies> movie)
         {
             dataGridView2.DataSource = movie;
+            Dictionary<int, int> dict = c.dat.MoviesPerYear();
+            var movies = chart1.Series.Add("Movies");
+            foreach(KeyValuePair<int,int> d in dict)
+            {
+                movies.Points.AddXY(d.Key, d.Value);
+            }
         }
 
         private void PrincipalPane_Load(object sender, EventArgs e)
@@ -89,7 +95,8 @@ namespace NetflixMovies.ui
                     m = c.dat.ReleaseYearMovieList(minutesOfMovie);
                     break;
                 case "clasification":
-                    m = c.dat.ClasificationMovieList(name);
+                    string clas = comboBox2.Text;
+                    m = c.dat.ClasificationMovieList(clas);
                     break;
                 default:
                     break;
@@ -101,6 +108,24 @@ namespace NetflixMovies.ui
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             searchCriteria = comboBox1.Text;
+            if(comboBox1.Text == "clasification")
+            {
+                comboBox2.Visible = true;
+            }
+            else
+            {
+                comboBox2.Visible = false;
+            }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,12 +29,18 @@ namespace NetflixMovies.ui
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Search = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -68,7 +74,7 @@ namespace NetflixMovies.ui
             "releaseYear",
             "minutesOfMovie",
             "clasification"});
-            this.comboBox1.Location = new System.Drawing.Point(103, 392);
+            this.comboBox1.Location = new System.Drawing.Point(21, 390);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 4;
@@ -76,7 +82,7 @@ namespace NetflixMovies.ui
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(288, 392);
+            this.textBox1.Location = new System.Drawing.Point(275, 390);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
@@ -84,7 +90,7 @@ namespace NetflixMovies.ui
             // 
             // Search
             // 
-            this.Search.Location = new System.Drawing.Point(433, 392);
+            this.Search.Location = new System.Drawing.Point(405, 390);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(75, 23);
             this.Search.TabIndex = 6;
@@ -92,11 +98,46 @@ namespace NetflixMovies.ui
             this.Search.UseVisualStyleBackColor = true;
             this.Search.Click += new System.EventHandler(this.button2_Click);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Comedies",
+            "Dramas",
+            "Action",
+            "Thriller"});
+            this.comboBox2.Location = new System.Drawing.Point(148, 390);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 7;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // chart1
+            // 
+            this.chart1.CausesValidation = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(49, 417);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(300, 300);
+            this.chart1.TabIndex = 8;
+            this.chart1.Text = "chart1";
+            this.chart1.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.SystemDefault;
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            // 
             // PrincipalPane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 450);
+            this.ClientSize = new System.Drawing.Size(1090, 749);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
@@ -106,6 +147,7 @@ namespace NetflixMovies.ui
             this.Text = "PrincipalPane";
             this.Load += new System.EventHandler(this.PrincipalPane_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +159,7 @@ namespace NetflixMovies.ui
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Search;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

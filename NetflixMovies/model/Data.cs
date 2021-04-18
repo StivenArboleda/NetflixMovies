@@ -141,7 +141,26 @@ namespace NetflixMovies
             return answer;
         }
 
-        //loadData
+        public Dictionary<int, int> MoviesPerYear()
+        {
+            Dictionary<int, int> answer = new Dictionary<int, int>(); 
+            for(int i=1925; i<=2021; i++)
+            {
+                int cont = 0;
+                foreach(Movies m in movie)
+                {
+                    if(m.ReleaseYear == i)
+                    {
+                        cont++;
+                    }
+                }
+                answer.Add(i, cont);
+            }
+            return answer;
+        }
+
+
+            //loadData
 
             public void loadData()
         {
