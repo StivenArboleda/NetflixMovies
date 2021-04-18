@@ -30,7 +30,7 @@ namespace NetflixMovies
 
         }
 
-        public List<Movies> TittleMovieList(string tit)
+        public List<Movies> TitleMovieList(string tit)
         {
             List<Movies> answer = new List<Movies>();
             foreach (Movies m in movie)
@@ -140,6 +140,8 @@ namespace NetflixMovies
             }
             return answer;
         }
+
+        // Methods for graphs 
 
         public Dictionary<int, int> MoviesPerYear()
         {

@@ -71,7 +71,7 @@ namespace NetflixMovies.ui
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "movieId",
-            "tittle",
+            "title",
             "director",
             "cast",
             "countryOfOrigin",

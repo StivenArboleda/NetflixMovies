@@ -77,8 +77,8 @@ namespace NetflixMovies.ui
                 case "movieId":
                     m = c.dat.IdMovieList(name);
                     break;
-                case "tittle":
-                    m = c.dat.TittleMovieList(name);
+                case "title":
+                    m = c.dat.TitleMovieList(name);
                     break;
                 case "director":
                     m = c.dat.DirectorMovieList(name);
