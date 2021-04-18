@@ -122,6 +122,14 @@ namespace NetflixMovies.ui
             {
                 comboBox2.Visible = false;
             }
+            if (comboBox1.Text == "clasification")
+            {
+                textBox1.Visible = false;
+            }
+            else
+            {
+                textBox1.Visible = true;
+            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
