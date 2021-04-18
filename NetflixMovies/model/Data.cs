@@ -159,10 +159,28 @@ namespace NetflixMovies
             return answer;
         }
 
+        public Dictionary<string, int> MoviesByDuration()
+        {
+            Dictionary<string, int> answer = new Dictionary<string, int>();
+            for (int i = 0; i <= 200; i+=20)
+            {
+                int cont = 0;
+                foreach (Movies m in movie)
+                {
+                    if (m.MinutesOfMovie >= i && m.MinutesOfMovie < i+20)
+                    {
+                        cont++;
+                    }
+                }
+                answer.Add(i+"-"+ (i+20), cont);
+            }
+            return answer;
+        }
 
-            //loadData
 
-            public void loadData()
+        //loadData
+
+        public void loadData()
         {
 
             using (var reader = new StreamReader(File.OpenRead(@"C:\Users\prestamo\Downloads\archive\netflix_titles.csv")))

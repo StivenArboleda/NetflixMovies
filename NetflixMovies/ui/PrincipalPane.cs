@@ -50,6 +50,12 @@ namespace NetflixMovies.ui
             {
                 movies.Points.AddXY(d.Key, d.Value);
             }
+            Dictionary<string, int> dict2 = c.dat.MoviesByDuration();
+            var movies2 = chart2.Series.Add("Movies");
+            foreach (KeyValuePair<string, int> d in dict2)
+            {
+                movies2.Points.AddXY(d.Key, d.Value);
+            }
         }
 
         private void PrincipalPane_Load(object sender, EventArgs e)
@@ -124,6 +130,11 @@ namespace NetflixMovies.ui
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart2_Click(object sender, EventArgs e)
         {
 
         }
