@@ -182,19 +182,25 @@ namespace NetflixMovies
         public Dictionary<string, int> MoviesByGenre()
         {
             Dictionary<string, int> answer = new Dictionary<string, int>();
-            movie.ToArray();
-            for (int i = 1; i <= movie.Count-1; i++)
+            List<string> genre = new List<string>();
+            genre.Add("Comedies");
+            genre.Add("Dramas");
+            genre.Add("Romantic Movies");
+            genre.Add("Action & Adventure");
+            genre.Add("Thriller");
+            genre.Add("Sci-Fi & Fantasy");
+            genre.Add("Classic Movies");
+            foreach (String g in genre)
             {
                 int cont = 0;
                 foreach (Movies m in movie)
                 {
-                    if (m.Clasification.Equals(movie[i]))
+                    if (m.Clasification.Contains(g))
                     {
                         cont++;
-
                     }
                 }
-                answer.Add(i+"", cont);
+                answer.Add(g, cont);
             }
             return answer;
         }
@@ -202,19 +208,71 @@ namespace NetflixMovies
         public Dictionary<string, int> MoviesByDirector()
         {
             Dictionary<string, int> answer = new Dictionary<string, int>();
-            movie.ToArray();
-            for (int i = 1; i <= movie.Count - 1; i++)
+            List<string> director = new List<string>();
+            director.Add("Jay Champman");
+            director.Add("Jay Karas");
+            director.Add("Jay Roach");
+            director.Add("Jeff Baena");
+            director.Add("Jeff Nichols");
+            director.Add("Jeremy Saulnier");
+            director.Add("Joe Berlinger");
+            foreach (String d in director)
             {
                 int cont = 0;
                 foreach (Movies m in movie)
                 {
-                    if (m.Clasification.Equals(movie[i]))
+                    if (m.Director.Contains(d))
                     {
                         cont++;
 
                     }
                 }
-                answer.Add(i + "", cont);
+                answer.Add(d, cont);
+            }
+            return answer;
+        }
+
+        public Dictionary<string, int> MoviesByCountry()
+        {
+            Dictionary<string, int> answer = new Dictionary<string, int>();
+            List<string> country = new List<string>();
+            country.Add("United States");
+            country.Add("Canada");
+            country.Add("Argentina");
+            country.Add("China");
+            country.Add("Egypt");
+            country.Add("France");
+            country.Add("India");
+            foreach (String d in country)
+            {
+                int cont = 0;
+                foreach (Movies m in movie)
+                {
+                    if (m.CountryOfOrigin.Contains(d))
+                    {
+                        cont++;
+
+                    }
+                }
+                answer.Add(d, cont);
+            }
+            return answer;
+        }
+
+        public Dictionary<int, int> MoviesPerYearLine()
+        {
+            Dictionary<int, int> answer = new Dictionary<int, int>();
+            for (int i = 1925; i <= 2021; i++)
+            {
+                int cont = 0;
+                foreach (Movies m in movie)
+                {
+                    if (m.ReleaseYear == i)
+                    {
+                        cont++;
+                    }
+                }
+                answer.Add(i, cont);
             }
             return answer;
         }
