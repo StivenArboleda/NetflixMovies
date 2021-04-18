@@ -21,3 +21,17 @@ The application has the facility to make filters according to certain criteria:
   4.  The *release date* on netflix can be searched by this method
   5. If only the name of the * irector* is known, you can search for him and all the films directed by him will appear
   6. And finally, you can search for an actor who appears in that movie.
+
+
+
+**For this first version**, the program will have the option of making *parameterized reports*, having the opportunity to filter and observe some *graphs* expressing different data visually and comfortably to the user.
+
+#### TECHNICAL SPECIFICATIONS
+
+For the development of this app, *C #* was used as a programming language accompanied by the *Visual Studio* development environment with the opportunity to use the .NET Framwork option.
+It has the facility of being an app to run in *any OS* regardless of the fact that its development was exclusive to Windows.
+
+**Project members:**
+
+[Isabella Ortiz](https://github.com/isabellaortiz5 "Isabella Ortiz")
+[Jhon Stiven Arboleda](https://github.com/StivenArboleda "Jhon Stiven Arboleda")
