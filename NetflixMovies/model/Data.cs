@@ -185,7 +185,7 @@ namespace NetflixMovies
         public void loadData()
         {
 
-            using (var reader = new StreamReader(File.OpenRead(@"C:\Users\prestamo\Downloads\archive\netflix_titles.csv")))
+            using (var reader = new StreamReader(File.OpenRead("..\\..\\Data\\netflix_titles.csv")))
             {
                 reader.ReadLine();
                 while (!reader.EndOfStream)
