@@ -41,6 +41,22 @@ It has the facility of being an app to run in *any OS* regardless of the fact th
 
 ------------
 
+### App preview:
+
+![Data Set](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Images/DataSet.jpeg "Data Set")
+ ✅ In this window we can see the dataset already loaded showing the data handled
+
+![Graphs](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Images/Graphs.jpeg "Graphs")
+✅ In this part you can see the graphs expressing particular information of the data
+
+![Options filter](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Images/Options%20filter.jpeg "Options filter")
+✅ These are the options available to filter
+
+![Filter by genre](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Images/Filter%20by%20genre.jpeg "Filter by genre")
+✅These are the options available to filter when you want to filter by gender
+
+------------
+
 
 **Project members:**
 
