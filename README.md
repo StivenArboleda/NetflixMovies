@@ -31,7 +31,19 @@ The application has the facility to make filters according to certain criteria:
 For the development of this app, *C #* was used as a programming language accompanied by the *Visual Studio* development environment with the opportunity to use the .NET Framwork option.
 It has the facility of being an app to run in *any OS* regardless of the fact that its development was exclusive to Windows.
 
+### Documentation:
+
+- [Class Diagram](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Class%20Diagram.pdf "Class Diagram")
+- [Object Diagram](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Object%20Diagram.pdf " Object Diagram")
+- [Engineer method](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/EngineeringMethod.pdf "Engineer method")
+- [Demo video](https://youtu.be/-J4dSvfLZvg "Demo video")
+
+
+------------
+
+
 **Project members:**
 
-[Isabella Ortiz](https://github.com/isabellaortiz5 "Isabella Ortiz")
-[Jhon Stiven Arboleda](https://github.com/StivenArboleda "Jhon Stiven Arboleda")
+- [Isabella Ortiz](https://github.com/isabellaortiz5 "Isabella Ortiz")
+
+- [Jhon Stiven Arboleda](https://github.com/StivenArboleda "Jhon Stiven Arboleda")
