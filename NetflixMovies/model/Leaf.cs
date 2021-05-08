@@ -18,7 +18,7 @@ namespace NetflixMovies.model
 
             foreach (Movies m in movs)
             {
-                if (genres.ContainsKey(m.Clasification){
+                if (genres.ContainsKey(m.Clasification)){
                     genres[m.Clasification] += 1;
                 }
                 else

@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace NetflixMovies.model
 {
-    class Class3
+    class Node
     {
+        private Question q;
+        private Movies trueBranch;
+        private Movies falseBranch;
+
+        public Node(Question q, Movies trueBranch, Movies falseBranch)
+        {
+            this.q = q;
+            this.trueBranch = trueBranch;
+            this.falseBranch = falseBranch;
+        }
     }
 }
+
+

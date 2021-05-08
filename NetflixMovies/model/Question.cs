@@ -16,7 +16,7 @@ namespace NetflixMovies.model
         {
             this.columnNumber = columnNumber;
             this.value = value;
-            bool success = Int32.TryParse(value, out intValue;
+            bool success = Int32.TryParse(value, out intValue);
             
         }
 
