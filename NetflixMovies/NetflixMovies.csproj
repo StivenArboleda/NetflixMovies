@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Arbol.cs" />
     <Compile Include="model\Data.cs" />
     <Compile Include="model\Movies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

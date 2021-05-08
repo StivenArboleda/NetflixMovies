@@ -182,7 +182,7 @@ namespace NetflixMovies.ui
             legend3.Title = "Genre";
             this.chart3.Legends.Add(legend3);
             this.chart3.Location = new System.Drawing.Point(699, 365);
-            this.chart3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart3.Margin = new System.Windows.Forms.Padding(2);
             this.chart3.Name = "chart3";
             this.chart3.Size = new System.Drawing.Size(300, 300);
             this.chart3.TabIndex = 10;
@@ -198,7 +198,7 @@ namespace NetflixMovies.ui
             legend4.Name = "Legend1";
             this.chart4.Legends.Add(legend4);
             this.chart4.Location = new System.Drawing.Point(21, 733);
-            this.chart4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart4.Margin = new System.Windows.Forms.Padding(2);
             this.chart4.Name = "chart4";
             this.chart4.Size = new System.Drawing.Size(300, 300);
             this.chart4.TabIndex = 11;
@@ -223,7 +223,7 @@ namespace NetflixMovies.ui
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1045, 609);
             this.Controls.Add(this.chart5);
             this.Controls.Add(this.chart4);
             this.Controls.Add(this.chart3);
