@@ -113,6 +113,7 @@ namespace NetflixMovies.model
             {
 
             }
+            List<Movies>[] rows = partition(movs, spl.questionSetGet);
         }
     }
 }
