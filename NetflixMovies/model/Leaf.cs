@@ -9,8 +9,10 @@ namespace NetflixMovies.model
     class Leaf
 
     {
-        public Leaf()
+        private Dictionary<string, int> occurrences;
+        public Leaf(List<Movies> movs)
         {
+            occurrences = classCounts(movs);
         }
         public Dictionary <String, int> classCounts(List<Movies> movs)
         {

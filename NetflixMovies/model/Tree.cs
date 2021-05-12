@@ -11,7 +11,7 @@ namespace NetflixMovies.model
         private List<Movies> trueRow;
         private List<Movies> falseRow;
 
-        public void partition(List<Movies> movs, Question q)
+        public List<Movies>[] partition(List<Movies> movs, Question q)
         {
             List<Movies> trueRowPartition = new List<Movies>();
             List<Movies> falseRowPartition = new List<Movies>();
@@ -26,8 +26,12 @@ namespace NetflixMovies.model
                     falseRowPartition.Add(mov);
                 }
             }
-            trueRow = trueRowPartition;
-            falseRow = falseRowPartition;
+            //trueRow = trueRowPartition;
+            //falseRow = falseRowPartition;
+            List<Movies>[] rows = new List<Movies>[2];
+            rows[0] = trueRowPartition;
+            rows[1] = falseRowPartition;
+            return rows;
         }
 
         public double gini (List<Movies> movs)
@@ -66,6 +70,49 @@ namespace NetflixMovies.model
                 }
             }
             return genres;
+        }
+
+        public Split findBestSplit (List<Movies> movs)
+        {
+            double bestGain = 0.0;
+            Question bestQuestion = null;
+            double currentUncertainty = gini(movs);
+            for(int i = 1; i < 7; i++)
+            {
+                HashSet<string> values = new HashSet<string>();
+                foreach(Movies mov in movs)
+                {
+                    values.Add(mov.getByNumber(i));
+                }
+
+                HashSet<string>.Enumerator em = values.GetEnumerator();
+                while (em.MoveNext())
+                {
+                    Question q = new Question(i, em.Current);
+                    List<Movies>[] rows = partition(movs, q);
+                    List<Movies> trueRow = rows[0];
+                    List<Movies> falseRow = rows[1];
+                    if(!(trueRow.Count == 0 || falseRow.Count == 0))
+                    {
+                        double gain = infoGain(trueRow, falseRow, currentUncertainty);
+                        if (gain >= bestGain)
+                        {
+                            bestGain = gain;
+                            bestQuestion = q;
+                        }
+                    }
+                }
+            }
+            return new Split(bestGain, bestQuestion);
+        }
+
+        public void buildTree (List<Movies> movs)
+        {
+            Split spl = findBestSplit(movs);
+            if(spl.gainSetGet == 0)
+            {
+
+            }
         }
     }
 }
