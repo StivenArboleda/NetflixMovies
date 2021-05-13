@@ -106,14 +106,33 @@ namespace NetflixMovies.model
             return new Split(bestGain, bestQuestion);
         }
 
-        public void buildTree (List<Movies> movs)
+        public Node buildTree (List<Movies> movs)
         {
             Split spl = findBestSplit(movs);
             if(spl.gainSetGet == 0)
             {
-
+                return new Leaf(movs);
             }
             List<Movies>[] rows = partition(movs, spl.questionSetGet);
+            Node trueBranch = buildTree(rows[0]);
+            Node falseBranch = buildTree(rows[1]);
+            return new Node(spl.questionSetGet, trueBranch, falseBranch);
+        }
+
+        public Dictionary<string, int> clasify(List<Movies> movs, Node node)
+        {
+            if (node.GetType().Equals(Leaf))
+            {
+                return node.predictions;
+            }
+            if (node.question.Match(movs))
+            {
+                return clasify(movs, node.trueB);
+            }
+            else
+            {
+                return clasify(movs, node.falseB);
+            }
         }
     }
 }

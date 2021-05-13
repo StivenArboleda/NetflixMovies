@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NetflixMovies.model
 {
-    class Leaf
+    class Leaf: Node
 
     {
         private Dictionary<string, int> occurrences;
@@ -30,5 +30,6 @@ namespace NetflixMovies.model
             }
             return genres;
         }
+        public Dictionary<string, int> predictions { get => occurrences; set => occurrences = value; }
     }
 }
