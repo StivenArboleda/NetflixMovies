@@ -27,3 +27,5 @@ C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csproj.CoreCompileInputs.cache
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.exe
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.pdb
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.GraphForm.resources
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.MainForm.resources
