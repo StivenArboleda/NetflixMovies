@@ -309,6 +309,9 @@ namespace NetflixMovies
                 }
             }
         }
+        // Set and Get 
+        public List<Movies> list { get => movie; set => movie = value; }
+
 
     }
 }

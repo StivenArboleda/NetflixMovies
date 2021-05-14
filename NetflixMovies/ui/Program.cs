@@ -18,6 +18,13 @@ namespace NetflixMovies.ui
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PrincipalPane());
+            Data d = new Data();
+            d.loadData();
+            List<Movies> complete = d.list;
+            Movies[] training = new Movies[1040];
+            Array.Copy(complete.ToArray(), training, 1040);
+            Movies[] testing = new Movies[4337];
+            Array.Copy(complete.ToArray(), testing, 4337);
         }
     }
 }
