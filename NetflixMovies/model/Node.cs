@@ -8,9 +8,9 @@ namespace NetflixMovies.model
 {
     class Node
     {
-        private Question q;
-        private Node trueBranch;
-        private Node falseBranch;
+        protected Question q;
+        protected Node trueBranch;
+        protected Node falseBranch;
 
         public Node(Question q, Node trueBranch, Node falseBranch)
         {

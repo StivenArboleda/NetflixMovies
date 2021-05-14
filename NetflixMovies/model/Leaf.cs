@@ -10,7 +10,7 @@ namespace NetflixMovies.model
 
     {
         private Dictionary<string, int> occurrences;
-        public Leaf(List<Movies> movs)
+        public Leaf(List<Movies> movs, Question q, Node trueBranch, Node falseBranch) : base (q, trueBranch, falseBranch)
         {
             occurrences = classCounts(movs);
         }

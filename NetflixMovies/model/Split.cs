@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NetflixMovies.model
 {
-    public class Split
+    class Split
     {
         private double gain;
         private Question question;

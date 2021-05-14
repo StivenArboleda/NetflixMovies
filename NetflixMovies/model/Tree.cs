@@ -111,7 +111,7 @@ namespace NetflixMovies.model
             Split spl = findBestSplit(movs);
             if(spl.gainSetGet == 0)
             {
-                return new Leaf(movs);
+                return new Leaf(movs, null, null, null);
             }
             List<Movies>[] rows = partition(movs, spl.questionSetGet);
             Node trueBranch = buildTree(rows[0]);
@@ -119,13 +119,14 @@ namespace NetflixMovies.model
             return new Node(spl.questionSetGet, trueBranch, falseBranch);
         }
 
-        public Dictionary<string, int> clasify(List<Movies> movs, Node node)
+        public Dictionary<string, int> clasify(Movies movs, Node node)
         {
-            if (node.GetType().Equals(Leaf))
+            if (node.GetType() == typeof(Leaf))
             {
-                return node.predictions;
+                Leaf l = (Leaf)node;
+                return l.predictions;
             }
-            if (node.question.Match(movs))
+            if (node.question.match(movs))
             {
                 return clasify(movs, node.trueB);
             }
