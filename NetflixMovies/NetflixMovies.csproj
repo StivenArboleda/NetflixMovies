@@ -49,7 +49,18 @@
   <ItemGroup>
     <Compile Include="model\Arbol.cs" />
     <Compile Include="model\Data.cs" />
+    <Compile Include="model\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="model\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\Leaf.cs" />
     <Compile Include="model\Movies.cs" />
+    <Compile Include="model\Node.cs" />
+    <Compile Include="model\Question.cs" />
+    <Compile Include="model\Split.cs" />
+    <Compile Include="model\Tree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ui\Program.cs" />
     <Compile Include="ui\Control.cs" />
@@ -59,6 +70,9 @@
     <Compile Include="ui\PrincipalPane.Designer.cs">
       <DependentUpon>PrincipalPane.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="model\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
