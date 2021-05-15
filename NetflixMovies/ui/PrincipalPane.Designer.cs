@@ -1,7 +1,7 @@
 ﻿
 namespace NetflixMovies.ui
 {
-    partial class PrincipalPane
+    partial class Principal
     {
         /// <summary>
         /// Required designer variable.
@@ -72,7 +72,7 @@ namespace NetflixMovies.ui
             this.container.Size = new System.Drawing.Size(1088, 415);
             this.container.TabIndex = 3;
             // 
-            // PrincipalPane
+            // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -81,8 +81,8 @@ namespace NetflixMovies.ui
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "PrincipalPane";
-            this.Text = "GridFormcs";
+            this.Name = "Principal";
+            this.Text = "NetflixMovie";
             this.ResumeLayout(false);
 
         }

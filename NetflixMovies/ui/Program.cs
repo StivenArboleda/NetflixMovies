@@ -15,9 +15,11 @@ namespace NetflixMovies.ui
         [STAThread]
         static void Main()
         {
+            Console.WriteLine("hola");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalPane());
+            Application.Run(new Principal());
+
             Data d = new Data();
             d.loadData();
             List<Movies> complete = d.list;

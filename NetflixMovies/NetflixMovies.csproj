@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="model\Arbol.cs" />
     <Compile Include="model\Data.cs" />
     <Compile Include="model\Leaf.cs" />
     <Compile Include="model\Movies.cs" />
@@ -91,11 +90,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ui\GraphForm.resx">
+      <DependentUpon>GraphForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ui\GridForm.resx">
       <DependentUpon>GridForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ui\PrincipalPane.resx">
       <DependentUpon>PrincipalPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\TreeForm.resx">
+      <DependentUpon>TreeForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
