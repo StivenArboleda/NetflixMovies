@@ -28,3 +28,4 @@ C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.exe
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.pdb
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.Form1.resources
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.GridForm.resources

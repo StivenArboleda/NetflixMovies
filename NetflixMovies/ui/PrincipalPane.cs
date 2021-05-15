@@ -12,176 +12,37 @@ namespace NetflixMovies.ui
 {
     public partial class PrincipalPane : Form
     {
-        OpenFileDialog actual;
-        Control c;
-        string searchCriteria;
-
         public PrincipalPane()
         {
             InitializeComponent();
-            actual = new OpenFileDialog();
-            c = new Control();
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            actual.Filter = "CSV|*.csv";
-            List<Movies> movie = new List<Movies>();
-            if (actual.ShowDialog() == DialogResult.OK)
-            {
-                string path = actual.FileName;
-                MessageBox.Show("Data uploaded correctly.");
-                movie = c.load(path);
-                load(movie);
-            }
-        }
-
-        private void load(List<Movies> movie)
-        {
-            dataGridView2.DataSource = movie;
-            Dictionary<int, int> dict = c.dat.MoviesPerYear();
-            var movies = chart1.Series.Add("Movies");
-            foreach(KeyValuePair<int,int> d in dict)
-            {
-                movies.Points.AddXY(d.Key, d.Value);
-            }
-            Dictionary<string, int> dict2 = c.dat.MoviesByDuration();
-            var movies2 = chart2.Series.Add("Movies");
-            foreach (KeyValuePair<string, int> d in dict2)
-            {
-                movies2.Points.AddXY(d.Key, d.Value);
-            }
-            Dictionary<string, int> dict3 = c.dat.MoviesByGenre();
-            chart3.ChartAreas[0].AxisX.Title = "genre";
-            foreach (KeyValuePair<string, int> d in dict3)
-            {
-                var movies3 = chart3.Series.Add(d.Key);
-                movies3.Points.AddXY(d.Key, d.Value);
-            }
-            Dictionary<string, int> dict4 = c.dat.MoviesByDirector();
-            chart4.ChartAreas[0].AxisX.Title = "director";
-            foreach (KeyValuePair<string, int> d in dict4)
-            {
-                var movies4 = chart4.Series.Add(d.Key);
-                movies4.Points.AddXY(d.Key, d.Value);
-            }
-            Dictionary<string, int> dict5 = c.dat.MoviesByCountry();
-            chart5.ChartAreas[0].AxisX.Title = "Country";
-            foreach (KeyValuePair<string, int> d in dict5)
-            {
-                var movies5 = chart5.Series.Add(d.Key);
-                movies5.Points.AddXY(d.Key, d.Value);
-            }
-        }
-
-        private void PrincipalPane_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            openChildForm(new GridForm());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String name = textBox1.Text.ToString();
-            List<Movies> m = new List<Movies>();
-            switch (searchCriteria)
-            {
-                case "movieId":
-                    m = c.dat.IdMovieList(name);
-                    break;
-                case "title":
-                    m = c.dat.TitleMovieList(name);
-                    break;
-                case "director":
-                    m = c.dat.DirectorMovieList(name);
-                    break;
-                case "cast":
-                    m = c.dat.CastMovieList(name);
-                    break;
-                case "countryOfOrigin":
-                    m = c.dat.ContryOfOriginMovieList(name);
-                    break;
-                case "datePublishedNet":
-                    m = c.dat.PublishedDateMovieList(name);
-                    break;
-                case "releaseYear":
-                    int releaseYear = Int32.Parse(name);
-                    m = c.dat.ReleaseYearMovieList(releaseYear);
-                    break;
-                case "minutesOfMovie":
-                    int minutesOfMovie = Int32.Parse(name); ;
-                    m = c.dat.ReleaseYearMovieList(minutesOfMovie);
-                    break;
-                case "clasification":
-                    string clas = comboBox2.Text;
-                    m = c.dat.ClasificationMovieList(clas);
-                    break;
-                default:
-                    break;
-            }
-            dataGridView2.DataSource = m;
-
+            openChildForm(new GraphForm());
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            searchCriteria = comboBox1.Text;
-            if(comboBox1.Text == "clasification")
-            {
-                comboBox2.Visible = true;
-            }
-            else
-            {
-                comboBox2.Visible = false;
-            }
-            if (comboBox1.Text == "clasification")
-            {
-                textBox1.Visible = false;
-            }
-            else
-            {
-                textBox1.Visible = true;
-            }
+            openChildForm(new TreeForm())
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void openChildForm(object child)
         {
+            if (this.container.Controls.Count > 0)
+                this.container.Controls.RemoveAt(0);
 
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart5_Click(object sender, EventArgs e)
-        {
-
+            Form childF = child as Form;
+            childF.TopLevel = false;
+            childF.Dock = DockStyle.Fill;
+            this.container.Controls.Add(childF);
+            this.container.Tag = childF;
+            childF.Show();
         }
     }
 }

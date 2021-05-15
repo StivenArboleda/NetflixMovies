@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NetflixMovies.ui
 {
-    public partial class Form1 : Form
+    public partial class TreeForm : Form
     {
-        public Form1()
+        public TreeForm()
         {
             InitializeComponent();
         }

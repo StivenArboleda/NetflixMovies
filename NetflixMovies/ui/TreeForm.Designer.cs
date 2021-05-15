@@ -1,7 +1,7 @@
 ﻿
 namespace NetflixMovies.ui
 {
-    partial class Form1
+    partial class TreeForm
     {
         /// <summary>
         /// Required designer variable.
