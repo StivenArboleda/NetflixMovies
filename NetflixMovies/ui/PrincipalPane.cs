@@ -5,9 +5,17 @@ namespace NetflixMovies.ui
 {
     public partial class Principal : Form
     {
+
+        GridForm grid;
+        GraphForm graph;
+        TreeForm t;
+
         public Principal()
         {
             InitializeComponent();
+            grid = new GridForm();
+            graph = new GraphForm();
+            t = new TreeForm();
         }
 
         private void button1_Click(object sender, EventArgs e)

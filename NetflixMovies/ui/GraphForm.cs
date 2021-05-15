@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace NetflixMovies.ui
 {
-    
+
     public partial class GraphForm : Form
     {
         Control c;
+        GridForm grid;
         public GraphForm()
         {
             InitializeComponent();
-            
+
         }
-        private void load(List<Movies> movie)
+  
+        private void Load(List<Movies> movie, DataGridView data)
         {
-            //dataGridView2.DataSource = movie;
+            
+            d.DataSource = movie;
             Dictionary<int, int> dict = c.dat.MoviesPerYear();
             var movies = chart1.Series.Add("Movies");
             foreach (KeyValuePair<int, int> d in dict)
@@ -57,5 +60,5 @@ namespace NetflixMovies.ui
             }
 
         }
-
+    }
 }

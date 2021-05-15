@@ -12,9 +12,9 @@ namespace NetflixMovies.ui
 {
     public partial class GridForm : Form
     {
-        OpenFileDialog actual;
+        public OpenFileDialog actual;
         Control c;
-        GridForm g;
+        GraphForm g;
         string searchCriteria;
 
         public GridForm()
@@ -39,15 +39,14 @@ namespace NetflixMovies.ui
                 string path = actual.FileName;
                 MessageBox.Show("Data uploaded correctly.");
                 movie = c.load(path);
-                //load(movie);
+                //g.Load(path);
             }
         }
-
         /*private void load(List<Movies> movie)
         {
         dataGridView2.DataSource = movie;
         Dictionary<int, int> dict = c.dat.MoviesPerYear();
-        var movies = g.chart.Series.Add("Movies");
+        var movies = g.chart1.Series.Add("Movies");
         foreach (KeyValuePair<int, int> d in dict)
         {
             movies.Points.AddXY(d.Key, d.Value);
@@ -156,31 +155,6 @@ namespace NetflixMovies.ui
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart5_Click(object sender, EventArgs e)
         {
 
         }
