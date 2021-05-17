@@ -86,7 +86,6 @@ namespace NetflixMovies.ui
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Search
             // 
@@ -129,7 +128,6 @@ namespace NetflixMovies.ui
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(160, 24);
             this.comboBox2.TabIndex = 7;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // GridForm
             // 
@@ -147,7 +145,6 @@ namespace NetflixMovies.ui
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GridForm";
             this.Text = "PrincipalPane";
-            this.Load += new System.EventHandler(this.PrincipalPane_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -45,7 +45,6 @@ namespace NetflixMovies.ui
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart4)).BeginInit();
@@ -53,7 +52,6 @@ namespace NetflixMovies.ui
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // chart4
@@ -65,7 +63,7 @@ namespace NetflixMovies.ui
             this.chart4.Location = new System.Drawing.Point(13, 404);
             this.chart4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart4.Name = "chart4";
-            this.chart4.Size = new System.Drawing.Size(400, 369);
+            this.chart4.Size = new System.Drawing.Size(423, 369);
             this.chart4.TabIndex = 12;
             this.chart4.Text = "chart4";
             // 
@@ -75,10 +73,10 @@ namespace NetflixMovies.ui
             this.chart5.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart5.Legends.Add(legend2);
-            this.chart5.Location = new System.Drawing.Point(885, 404);
+            this.chart5.Location = new System.Drawing.Point(933, 404);
             this.chart5.Margin = new System.Windows.Forms.Padding(4);
             this.chart5.Name = "chart5";
-            this.chart5.Size = new System.Drawing.Size(400, 369);
+            this.chart5.Size = new System.Drawing.Size(439, 369);
             this.chart5.TabIndex = 13;
             this.chart5.Text = "chart5";
             // 
@@ -89,10 +87,10 @@ namespace NetflixMovies.ui
             legend3.Name = "Genre";
             legend3.Title = "Genre";
             this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(885, 13);
+            this.chart3.Location = new System.Drawing.Point(933, 13);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart3.Name = "chart3";
-            this.chart3.Size = new System.Drawing.Size(400, 369);
+            this.chart3.Size = new System.Drawing.Size(439, 369);
             this.chart3.TabIndex = 11;
             this.chart3.Text = "chart3";
             title1.Name = "Comedy";
@@ -104,10 +102,10 @@ namespace NetflixMovies.ui
             this.chart2.ChartAreas.Add(chartArea4);
             legend4.Name = "Legend1";
             this.chart2.Legends.Add(legend4);
-            this.chart2.Location = new System.Drawing.Point(444, 404);
+            this.chart2.Location = new System.Drawing.Point(466, 404);
             this.chart2.Margin = new System.Windows.Forms.Padding(4);
             this.chart2.Name = "chart2";
-            this.chart2.Size = new System.Drawing.Size(400, 369);
+            this.chart2.Size = new System.Drawing.Size(439, 369);
             this.chart2.TabIndex = 10;
             this.chart2.Text = "chart2";
             // 
@@ -121,20 +119,10 @@ namespace NetflixMovies.ui
             this.chart1.Location = new System.Drawing.Point(13, 13);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
-            this.chart1.Size = new System.Drawing.Size(400, 369);
+            this.chart1.Size = new System.Drawing.Size(423, 369);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
             this.chart1.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.SystemDefault;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(364, 674);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(31, 10);
-            this.dataGridView1.TabIndex = 14;
             // 
             // button1
             // 
@@ -151,7 +139,7 @@ namespace NetflixMovies.ui
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(436, 30);
+            this.label1.Location = new System.Drawing.Point(458, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(428, 46);
             this.label1.TabIndex = 20;
@@ -162,7 +150,7 @@ namespace NetflixMovies.ui
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1169, 599);
+            this.ClientSize = new System.Drawing.Size(1286, 599);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chart5);
@@ -170,7 +158,6 @@ namespace NetflixMovies.ui
             this.Controls.Add(this.chart3);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GraphForm";
             this.Text = "GraphForm";
@@ -179,7 +166,6 @@ namespace NetflixMovies.ui
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +178,6 @@ namespace NetflixMovies.ui
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
     }

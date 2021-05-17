@@ -25,7 +25,6 @@ namespace NetflixMovies.ui
 
         private void load(List<Movies> movie)
         {
-
             Dictionary<int, int> dict = c.dat.MoviesPerYear();
             var movies = chart1.Series.Add("Movies");
             foreach (KeyValuePair<int, int> d in dict)
