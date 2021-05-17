@@ -36,6 +36,10 @@ It has the facility of being an app to run in *any OS* regardless of the fact th
 - [Class Diagram](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Class%20Diagram.pdf "Class Diagram")
 - [Object Diagram](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Object%20Diagram.pdf " Object Diagram")
 - [Engineer method](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/EngineeringMethod.pdf "Engineer method")
+- [SequenceDiagrams](https://github.com/StivenArboleda/NetflixMovies/tree/master/NetflixMovies/Doscumentation/Sequence%20Diagrams "SequenceDiagrams")
+  - [Number one:  Load data](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Sequence%20Diagrams/SequenceOne.pdf "Number one:  load data")
+  - [Number two: Upload graphics](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Sequence%20Diagrams/SequenceTwo.pdf "Number two: upload graphics")
+  - [Number three: Filter movie id](https://github.com/StivenArboleda/NetflixMovies/blob/master/NetflixMovies/Doscumentation/Sequence%20Diagrams/SequenceThree.pdf "Number three: Filter movie id")
 - [Demo video](https://youtu.be/-J4dSvfLZvg "Demo video")
 
 
