@@ -69,14 +69,14 @@ namespace NetflixMovies.ui
             // 
             this.container.Location = new System.Drawing.Point(12, 96);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(1336, 467);
+            this.container.Size = new System.Drawing.Size(1382, 585);
             this.container.TabIndex = 3;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1360, 566);
+            this.ClientSize = new System.Drawing.Size(1439, 693);
             this.Controls.Add(this.container);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
