@@ -13,18 +13,19 @@ namespace NetflixMovies.ui
 
     public partial class GraphForm : Form
     {
+        OpenFileDialog actual;
         Control c;
         GridForm grid;
         public GraphForm()
         {
             InitializeComponent();
-
+            actual = new OpenFileDialog();
+            c = new Control();
         }
-  
-        private void Load(List<Movies> movie, DataGridView data)
+
+        private void load(List<Movies> movie)
         {
-            
-            d.DataSource = movie;
+
             Dictionary<int, int> dict = c.dat.MoviesPerYear();
             var movies = chart1.Series.Add("Movies");
             foreach (KeyValuePair<int, int> d in dict)
@@ -59,6 +60,19 @@ namespace NetflixMovies.ui
                 movies5.Points.AddXY(d.Key, d.Value);
             }
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            actual.Filter = "CSV|*.csv";
+            List<Movies> movie = new List<Movies>();
+            if (actual.ShowDialog() == DialogResult.OK)
+            {
+                string path = actual.FileName;
+                MessageBox.Show("Data uploaded correctly.");
+                movie = c.load(path);
+                load(movie);
+            }
         }
     }
 }
