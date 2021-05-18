@@ -16,5 +16,10 @@ namespace NetflixMovies.ui
         {
             InitializeComponent();
         }
+
+        private void Show_Click(object sender, EventArgs e)
+        {
+   
+        }
     }
 }

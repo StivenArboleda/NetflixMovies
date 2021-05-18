@@ -33,13 +33,16 @@ namespace NetflixMovies.ui
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.container = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(51, 47);
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(37, 47);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(89, 29);
             this.button1.TabIndex = 0;
             this.button1.Text = "Tabla";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,9 +50,11 @@ namespace NetflixMovies.ui
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(121, 47);
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(122, 47);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(89, 29);
             this.button2.TabIndex = 1;
             this.button2.Text = "Graficos";
             this.button2.UseVisualStyleBackColor = true;
@@ -57,9 +62,11 @@ namespace NetflixMovies.ui
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(193, 47);
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(206, 47);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(89, 29);
             this.button3.TabIndex = 2;
             this.button3.Text = "Arbol";
             this.button3.UseVisualStyleBackColor = true;
@@ -72,11 +79,22 @@ namespace NetflixMovies.ui
             this.container.Size = new System.Drawing.Size(1382, 585);
             this.container.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Algerian", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(386, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(603, 89);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "NETFLIX MOVIE";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1439, 693);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.container);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -84,6 +102,7 @@ namespace NetflixMovies.ui
             this.Name = "Principal";
             this.Text = "NetflixMovie";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,5 +112,6 @@ namespace NetflixMovies.ui
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel container;
+        private System.Windows.Forms.Label label1;
     }
 }

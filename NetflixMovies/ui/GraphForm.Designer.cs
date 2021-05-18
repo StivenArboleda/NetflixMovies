@@ -29,17 +29,17 @@ namespace NetflixMovies.ui
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -56,10 +56,10 @@ namespace NetflixMovies.ui
             // 
             // chart4
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart4.Legends.Add(legend1);
+            chartArea11.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chart4.Legends.Add(legend11);
             this.chart4.Location = new System.Drawing.Point(13, 404);
             this.chart4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart4.Name = "chart4";
@@ -69,10 +69,10 @@ namespace NetflixMovies.ui
             // 
             // chart5
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart5.Legends.Add(legend2);
+            chartArea12.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chart5.Legends.Add(legend12);
             this.chart5.Location = new System.Drawing.Point(933, 404);
             this.chart5.Margin = new System.Windows.Forms.Padding(4);
             this.chart5.Name = "chart5";
@@ -82,26 +82,26 @@ namespace NetflixMovies.ui
             // 
             // chart3
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Genre";
-            legend3.Title = "Genre";
-            this.chart3.Legends.Add(legend3);
+            chartArea13.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea13);
+            legend13.Name = "Genre";
+            legend13.Title = "Genre";
+            this.chart3.Legends.Add(legend13);
             this.chart3.Location = new System.Drawing.Point(933, 13);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart3.Name = "chart3";
             this.chart3.Size = new System.Drawing.Size(439, 369);
             this.chart3.TabIndex = 11;
             this.chart3.Text = "chart3";
-            title1.Name = "Comedy";
-            this.chart3.Titles.Add(title1);
+            title3.Name = "Comedy";
+            this.chart3.Titles.Add(title3);
             // 
             // chart2
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            chartArea14.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea14);
+            legend14.Name = "Legend1";
+            this.chart2.Legends.Add(legend14);
             this.chart2.Location = new System.Drawing.Point(466, 404);
             this.chart2.Margin = new System.Windows.Forms.Padding(4);
             this.chart2.Name = "chart2";
@@ -112,10 +112,10 @@ namespace NetflixMovies.ui
             // chart1
             // 
             this.chart1.CausesValidation = false;
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea15.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea15);
+            legend15.Name = "Legend1";
+            this.chart1.Legends.Add(legend15);
             this.chart1.Location = new System.Drawing.Point(13, 13);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
@@ -126,7 +126,8 @@ namespace NetflixMovies.ui
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(572, 348);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(617, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 34);
             this.button1.TabIndex = 15;
@@ -137,11 +138,11 @@ namespace NetflixMovies.ui
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(458, 13);
+            this.label1.Font = new System.Drawing.Font("Algerian", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(443, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(428, 46);
+            this.label1.Size = new System.Drawing.Size(463, 55);
             this.label1.TabIndex = 20;
             this.label1.Text = "RESUMEN GRÁFICO";
             // 
