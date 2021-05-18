@@ -74,15 +74,17 @@ namespace NetflixMovies.ui
             // 
             // container
             // 
-            this.container.Location = new System.Drawing.Point(12, 96);
+            this.container.Location = new System.Drawing.Point(-1, 96);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(1382, 585);
+            this.container.Size = new System.Drawing.Size(1443, 618);
             this.container.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Algerian", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(386, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(603, 89);
@@ -93,7 +95,8 @@ namespace NetflixMovies.ui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1439, 693);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1439, 715);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.container);
             this.Controls.Add(this.button3);

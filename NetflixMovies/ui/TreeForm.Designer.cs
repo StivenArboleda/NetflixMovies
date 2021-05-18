@@ -38,39 +38,43 @@ namespace NetflixMovies.ui
             // 
             // Show
             // 
+            this.Show.BackColor = System.Drawing.Color.DimGray;
             this.Show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Show.Location = new System.Drawing.Point(1049, 486);
             this.Show.Name = "Show";
             this.Show.Size = new System.Drawing.Size(151, 46);
             this.Show.TabIndex = 0;
             this.Show.Text = "PREDECIR";
-            this.Show.UseVisualStyleBackColor = true;
+            this.Show.UseVisualStyleBackColor = false;
             this.Show.Click += new System.EventHandler(this.Show_Click);
             // 
             // Implementation
             // 
             this.Implementation.AutoSize = true;
+            this.Implementation.BackColor = System.Drawing.Color.DimGray;
             this.Implementation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Implementation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Implementation.Location = new System.Drawing.Point(1049, 126);
+            this.Implementation.ForeColor = System.Drawing.Color.Black;
+            this.Implementation.Location = new System.Drawing.Point(1049, 153);
             this.Implementation.Name = "Implementation";
             this.Implementation.Size = new System.Drawing.Size(186, 29);
             this.Implementation.TabIndex = 1;
             this.Implementation.TabStop = true;
             this.Implementation.Text = "IMPLEMTACIÓN";
-            this.Implementation.UseVisualStyleBackColor = true;
+            this.Implementation.UseVisualStyleBackColor = false;
             // 
             // library
             // 
             this.library.AutoSize = true;
+            this.library.BackColor = System.Drawing.Color.DimGray;
             this.library.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.library.Location = new System.Drawing.Point(1049, 161);
+            this.library.Location = new System.Drawing.Point(1049, 188);
             this.library.Name = "library";
             this.library.Size = new System.Drawing.Size(120, 29);
             this.library.TabIndex = 2;
             this.library.TabStop = true;
             this.library.Text = "LIBRERÍA";
-            this.library.UseVisualStyleBackColor = true;
+            this.library.UseVisualStyleBackColor = false;
             // 
             // richTextBox1
             // 
@@ -83,10 +87,12 @@ namespace NetflixMovies.ui
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Algerian", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(117, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(902, 59);
+            this.label1.Size = new System.Drawing.Size(904, 61);
             this.label1.TabIndex = 4;
             this.label1.Text = "VISUALIZACIÓN ÁRBOL DE DECISIÓN";
             // 
@@ -94,6 +100,7 @@ namespace NetflixMovies.ui
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::NetflixMovies.Properties.Resources.tecnologia_inteligencia_artificial;
             this.ClientSize = new System.Drawing.Size(1247, 579);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);

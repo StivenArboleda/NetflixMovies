@@ -134,6 +134,7 @@ namespace NetflixMovies.ui
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackgroundImage = global::NetflixMovies.Properties.Resources.datos;
             this.ClientSize = new System.Drawing.Size(1414, 473);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.Search);
