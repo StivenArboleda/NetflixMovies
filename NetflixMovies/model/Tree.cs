@@ -15,6 +15,7 @@ namespace NetflixMovies.model
         {
             List<Movies> trueRowPartition = new List<Movies>();
             List<Movies> falseRowPartition = new List<Movies>();
+           
             foreach (Movies mov in movs)
             {
                 if (q.match(mov))

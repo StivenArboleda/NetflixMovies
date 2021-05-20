@@ -9,7 +9,6 @@ C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMo
 C:\Users\Windows 10\source\repos\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.pdb
 C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csprojAssemblyReference.cache
 C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.Properties.Resources.resources
-C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.PrincipalPane.resources
 C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csproj.GenerateResource.cache
 C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csproj.CoreCompileInputs.cache
 C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.exe
@@ -30,3 +29,7 @@ C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.Principal.resources
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.GraphForm.resources
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.TreeForm.resources
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.GraphForm.resources
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.GridForm.resources
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.Principal.resources
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.ui.TreeForm.resources

@@ -13,7 +13,7 @@ namespace NetflixMovies.ui
         internal List<Movies> load(string path)
         {
             d.loadData();
-            return d.movie;
+           return d.movie;
         }
 
         public Control()
