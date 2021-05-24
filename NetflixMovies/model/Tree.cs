@@ -37,12 +37,12 @@ namespace NetflixMovies.model
 
         public double gini (List<Movies> movs)
         {
-            Dictionary<String, int> counts = classCounts(movs);
+            Dictionary<int, String> counts = classCounts(movs);
             double impurity = 1.0;
 
-            foreach (KeyValuePair<string, int> genres in counts) 
+            foreach (KeyValuePair<int,string> genres in counts) 
             {
-                double prob = genres.Value / counts.Count;
+                double prob = genres.Key / counts.Count;
                 impurity -= Math.Pow(prob, 2);
             }
             return impurity;
@@ -55,9 +55,12 @@ namespace NetflixMovies.model
             return currentUncertainty - p * gini(trueRow) - (1 - p) * gini(falseRow);
         }
 
-        public Dictionary<String, int> classCounts(List<Movies> movs)
+        // isa
+        public Dictionary<int, string> classCounts(List<Movies> movs)
         {
             Dictionary<string, int> genres = new Dictionary<string, int>();
+
+            Dictionary<int, string> generos = new Dictionary<int, string>();
 
             foreach (Movies m in movs)
             {
@@ -70,8 +73,151 @@ namespace NetflixMovies.model
                     genres.Add(m.Clasification, 1);
                 }
             }
-            return genres;
+
+            Console.WriteLine(genres);
+
+            int i = 0;
+
+            foreach (string clasificacion in genres.Keys)
+            {
+                string cadena = clasificacion;
+                int end = cadena.Length;
+                int start = 0;
+                int count = 0;
+                int at = 0;
+                bool similar = false;
+
+                while (count <= end)
+                {
+
+                    at = cadena.IndexOf(", ", start);
+                    if (at == -1)
+                    {
+                        foreach (string dato in generos.Values)
+                        {
+                            if (dato == cadena.Substring(start, end - start))
+                            {
+                                similar = true;
+                            }
+                        }
+
+                        if (similar == false)
+                        {
+                            generos.Add(i, cadena.Substring(start, end - start));
+                            i++; 
+                        }
+                        break;
+                    }
+
+                    foreach (string dato in generos.Values) { 
+                        if (dato == cadena.Substring(start, at - start))
+                        {
+                            similar = true;
+                        }
+                    }   
+
+                    if (similar == false)
+                    {
+                        generos.Add(i, cadena.Substring(start, at - start));
+                        i++;
+                    }
+                    count += at;
+                    start = at + 2;
+                                   
+                }
+            }
+
+            return generos;
+
         }
+        // isa
+
+
+        // isa
+
+        public Dictionary<int, string> castCounts(List<Movies> movs)
+        {
+            Dictionary<string, int> actors = new Dictionary<string, int>();
+
+            Dictionary<int, string> actores = new Dictionary<int, string>();
+
+            foreach (Movies m in movs)
+            {
+                if (actors.ContainsKey(m.Cast))
+                {
+                    actors[m.Cast] += 1;
+                }
+                else
+                {
+                    actors.Add(m.Cast, 1);
+                }
+            }
+
+
+            int i = 0;
+
+            foreach (string cast in actors.Keys)
+            {
+                string cadena = cast;
+                int end = cadena.Length;
+                int start = 0;
+                int count = 0;
+                int at = 0;
+                bool similar = false;
+
+                while (count <= end)
+                {
+
+                    at = cadena.IndexOf(", ", start);
+                    if (at == -1)
+                    {
+                        foreach (string dato in actores.Values)
+                        {
+                            if (dato == cadena.Substring(start, end - start))
+                            {
+                                similar = true;
+                            }
+                        }
+
+                        if (similar == false)
+                        {
+                            actores.Add(i, cadena.Substring(start, end - start));
+                            i++;
+                        }
+                        break;
+                    }
+
+                    foreach (string dato in actores.Values)
+                    {
+                        if (dato == cadena.Substring(start, at - start))
+                        {
+                            similar = true;
+                        }
+                    }
+
+                    if (similar == false)
+                    {
+                        actores.Add(i, cadena.Substring(start, at - start));
+                        i++;
+                    }
+                    count += at;
+                    start = at + 2;
+
+                }
+            }
+
+            return actores;
+
+        }
+
+
+        // isa
+
+
+
+
+
+
 
         public Split findBestSplit (List<Movies> movs)
         {

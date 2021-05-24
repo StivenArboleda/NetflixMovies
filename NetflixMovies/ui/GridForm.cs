@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NetflixMovies.model;
 
 namespace NetflixMovies.ui
 {
@@ -35,6 +36,14 @@ namespace NetflixMovies.ui
                 MessageBox.Show("Data uploaded correctly.");
                 movie = c.load(path);
                 load(movie);
+
+                TreeC arbol = new TreeC();
+                Dictionary<int, string> clasification = arbol.classCounts(movie);
+                Dictionary<int, string> actors = arbol.castCounts(movie);
+                Dictionary<int, int> years = arbol.yearCounts(movie);
+                Console.WriteLine(years);
+
+
             }
         }
 
