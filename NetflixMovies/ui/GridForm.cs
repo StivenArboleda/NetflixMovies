@@ -37,11 +37,11 @@ namespace NetflixMovies.ui
                 movie = c.load(path);
                 load(movie);
 
-                TreeC arbol = new TreeC();
-                Dictionary<int, string> clasification = arbol.classCounts(movie);
-                Dictionary<int, string> actors = arbol.castCounts(movie);
-                Dictionary<int, int> years = arbol.yearCounts(movie);
-                Console.WriteLine(years);
+                Tree arbol = new Tree();
+                Dictionary<int, string> clasification = arbol.listClasification(movie);
+                Dictionary<int, string> cast = arbol.listCast(movie);
+                Dictionary<int, int> year = arbol.listYear(movie);
+                double giniYear = arbol.giniYear(movie, 2006);
 
 
             }

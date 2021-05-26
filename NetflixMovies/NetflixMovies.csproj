@@ -54,7 +54,6 @@
     <Compile Include="model\Question.cs" />
     <Compile Include="model\Split.cs" />
     <Compile Include="model\Tree.cs" />
-    <Compile Include="model\TreeC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ui\GraphForm.cs">
       <SubType>Form</SubType>
