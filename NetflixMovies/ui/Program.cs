@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using NetflixMovies.model;
 
 namespace NetflixMovies.ui
@@ -14,7 +15,7 @@ namespace NetflixMovies.ui
         /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Console.WriteLine("hola");
             Application.EnableVisualStyles();

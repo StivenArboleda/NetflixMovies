@@ -37,11 +37,7 @@ namespace NetflixMovies.ui
                 movie = c.load(path);
                 load(movie);
 
-                Tree arbol = new Tree();
-                Dictionary<int, string> clasification = arbol.listClasification(movie);
-                Dictionary<int, string> cast = arbol.listCast(movie);
-                Dictionary<int, int> year = arbol.listYear(movie);
-                double giniYear = arbol.giniYear(movie, 2006);
+               
 
 
             }

@@ -8,12 +8,12 @@ namespace NetflixMovies.model
 {
     class Tree
     {
-        public Dictionary<string, double> giniTree(List<Movies> movies, string clasification, string actor, int year)
+        public Dictionary<string, double> giniTree(List<Movies> movies, string clasification, string actor, int year) // variable objetivo es el actor
         {
             Dictionary<string, double> Tree = new Dictionary<string, double>();
 
-            Tree.Add("clasification", giniClasification(movies, clasification));
-            Tree.Add("cast", giniCast(movies, actor));
+            Tree.Add("clasification", giniClasification(movies, clasification)); 
+            Tree.Add("cast", giniCast(movies, actor)); 
             Tree.Add("year", giniYear(movies, year));
 
             return Tree.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
@@ -27,9 +27,10 @@ namespace NetflixMovies.model
             List<Movies> Nodo1 = new List<Movies>();
             List<Movies> Nodo2 = new List<Movies>();
             Dictionary<int, string> peli = new Dictionary<int, string>();
-            int j = 0;
+            int j;
             string value;
-            bool hasValue = Tree.TryGetValue(1, out value);
+            bool hasValue = Tree.TryGetValue(0, out value);
+
             if (value == "clasification")
             {
                 foreach (Movies movie in movies)
@@ -39,8 +40,8 @@ namespace NetflixMovies.model
                         Nodo1.Add(movie);
                     }
                 }
-
-                hasValue = Tree.TryGetValue(2, out value);
+                
+                hasValue = Tree.TryGetValue(1, out value);
                 if (value == "year")
                 {
                     foreach (Movies dato1 in Nodo1)
@@ -51,6 +52,7 @@ namespace NetflixMovies.model
                         }
                     }
 
+                    j = 0;
                     foreach (Movies dato2 in Nodo2)
                     {
                         if (dato2.Cast.Contains(actor))
@@ -60,8 +62,11 @@ namespace NetflixMovies.model
                         }
                     }
                 }
-                else
+
+                hasValue = Tree.TryGetValue(1, out value);
+                if (value == "cast")
                 {
+                    j = 0;
                     foreach (Movies dato1 in Nodo1)
                     {
                         if (dato1.Cast.Contains(actor))
@@ -83,7 +88,7 @@ namespace NetflixMovies.model
                     }
                 }
 
-                hasValue = Tree.TryGetValue(2, out value);
+                hasValue = Tree.TryGetValue(1, out value);
                 if (value == "clasification")
                 {
                     foreach (Movies dato1 in Nodo1)
@@ -94,6 +99,7 @@ namespace NetflixMovies.model
                         }
                     }
 
+                    j = 0;
                     foreach (Movies dato2 in Nodo2)
                     {
                         if (dato2.Cast.Contains(actor))
@@ -103,10 +109,11 @@ namespace NetflixMovies.model
                         }
                     }
                 }
-                else
+                if (value == "cast")
                 {
                     foreach (Movies dato1 in Nodo1)
                     {
+                        j = 0;
                         if (dato1.Cast.Contains(actor))
                         {
                             peli.Add(j, dato1.Title);
@@ -119,6 +126,7 @@ namespace NetflixMovies.model
 
             if (value == "cast")
             {
+                j = 0;
                 foreach (Movies movie in movies)
                 {
                     if (movie.Cast.Contains(actor))
@@ -128,7 +136,7 @@ namespace NetflixMovies.model
                     }
                 }
             }
-            return Tree;
+            return peli;
         }
 
         public Dictionary<int, string> listClasification(List<Movies> movies)
@@ -271,6 +279,8 @@ namespace NetflixMovies.model
             return years.OrderBy(x => x.Value).ToDictionary(x => j++, x => x.Value);
         }
 
+
+        // metedo gini bipartido o regresion 
 
         public double giniClasification(List<Movies> movies, string clasification)
         {
