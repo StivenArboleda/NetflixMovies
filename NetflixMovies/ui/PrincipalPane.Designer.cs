@@ -40,10 +40,10 @@ namespace NetflixMovies.ui
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(28, 38);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(37, 47);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 24);
+            this.button1.Size = new System.Drawing.Size(89, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Tabla";
             this.button1.UseVisualStyleBackColor = true;
@@ -53,10 +53,10 @@ namespace NetflixMovies.ui
             // 
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(92, 38);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(123, 47);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 24);
+            this.button2.Size = new System.Drawing.Size(104, 30);
             this.button2.TabIndex = 1;
             this.button2.Text = "Graficos";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,10 +66,10 @@ namespace NetflixMovies.ui
             // 
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(154, 38);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(223, 47);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 24);
+            this.button3.Size = new System.Drawing.Size(89, 30);
             this.button3.TabIndex = 2;
             this.button3.Text = "Arbol";
             this.button3.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@ namespace NetflixMovies.ui
             // 
             // container
             // 
-            this.container.Location = new System.Drawing.Point(-1, 78);
-            this.container.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.container.Location = new System.Drawing.Point(-1, 96);
+            this.container.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(1082, 502);
+            this.container.Size = new System.Drawing.Size(1443, 618);
             this.container.TabIndex = 3;
             // 
             // label1
@@ -89,25 +89,24 @@ namespace NetflixMovies.ui
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Algerian", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(290, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(387, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(519, 71);
+            this.label1.Size = new System.Drawing.Size(647, 89);
             this.label1.TabIndex = 4;
             this.label1.Text = "NETFLIX MOVIES";
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1028, 581);
+            this.ClientSize = new System.Drawing.Size(1371, 715);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.container);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Principal";
             this.Text = "NetflixMovie";
             this.ResumeLayout(false);

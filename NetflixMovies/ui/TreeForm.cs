@@ -44,7 +44,7 @@ namespace NetflixMovies.ui
 
         private void Show_Click(object sender, EventArgs e)
         {
-
+            treeView1.Nodes.Clear();
             string gender;
             string actor;
             int year;

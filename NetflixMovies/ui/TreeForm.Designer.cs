@@ -44,10 +44,10 @@ namespace NetflixMovies.ui
             // 
             this.Show.BackColor = System.Drawing.Color.DimGray;
             this.Show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Show.Location = new System.Drawing.Point(787, 395);
-            this.Show.Margin = new System.Windows.Forms.Padding(2);
+            this.Show.Location = new System.Drawing.Point(1020, 486);
+            this.Show.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Show.Name = "Show";
-            this.Show.Size = new System.Drawing.Size(113, 37);
+            this.Show.Size = new System.Drawing.Size(151, 46);
             this.Show.TabIndex = 0;
             this.Show.Text = "PREDECIR";
             this.Show.UseVisualStyleBackColor = false;
@@ -60,13 +60,13 @@ namespace NetflixMovies.ui
             this.Implementation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Implementation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Implementation.ForeColor = System.Drawing.Color.Black;
-            this.Implementation.Location = new System.Drawing.Point(787, 292);
-            this.Implementation.Margin = new System.Windows.Forms.Padding(2);
+            this.Implementation.Location = new System.Drawing.Point(1020, 357);
+            this.Implementation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Implementation.Name = "Implementation";
-            this.Implementation.Size = new System.Drawing.Size(147, 24);
+            this.Implementation.Size = new System.Drawing.Size(213, 29);
             this.Implementation.TabIndex = 1;
             this.Implementation.TabStop = true;
-            this.Implementation.Text = "IMPLEMTACIÓN";
+            this.Implementation.Text = "IMPLEMENTACIÓN";
             this.Implementation.UseVisualStyleBackColor = false;
             // 
             // library
@@ -74,10 +74,10 @@ namespace NetflixMovies.ui
             this.library.AutoSize = true;
             this.library.BackColor = System.Drawing.Color.DimGray;
             this.library.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.library.Location = new System.Drawing.Point(787, 335);
-            this.library.Margin = new System.Windows.Forms.Padding(2);
+            this.library.Location = new System.Drawing.Point(1020, 410);
+            this.library.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.library.Name = "library";
-            this.library.Size = new System.Drawing.Size(103, 24);
+            this.library.Size = new System.Drawing.Size(120, 29);
             this.library.TabIndex = 2;
             this.library.TabStop = true;
             this.library.Text = "LIBRERÍA";
@@ -85,10 +85,10 @@ namespace NetflixMovies.ui
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(81, 102);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.Location = new System.Drawing.Point(75, 126);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(692, 331);
+            this.richTextBox1.Size = new System.Drawing.Size(921, 406);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -98,50 +98,57 @@ namespace NetflixMovies.ui
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Algerian", 31.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(88, 52);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(75, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(719, 48);
+            this.label1.Size = new System.Drawing.Size(904, 61);
             this.label1.TabIndex = 4;
             this.label1.Text = "VISUALIZACIÓN ÁRBOL DE DECISIÓN";
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(117, 128);
+            this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeView1.Location = new System.Drawing.Point(117, 158);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(199, 279);
+            this.treeView1.Size = new System.Drawing.Size(291, 342);
             this.treeView1.TabIndex = 5;
             // 
             // comboGender
             // 
+            this.comboGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboGender.FormattingEnabled = true;
-            this.comboGender.Location = new System.Drawing.Point(787, 128);
+            this.comboGender.Location = new System.Drawing.Point(1020, 158);
+            this.comboGender.Margin = new System.Windows.Forms.Padding(4);
             this.comboGender.Name = "comboGender";
-            this.comboGender.Size = new System.Drawing.Size(136, 21);
+            this.comboGender.Size = new System.Drawing.Size(201, 28);
             this.comboGender.TabIndex = 6;
             // 
             // comboCast
             // 
+            this.comboCast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboCast.FormattingEnabled = true;
-            this.comboCast.Location = new System.Drawing.Point(787, 174);
+            this.comboCast.Location = new System.Drawing.Point(1020, 211);
+            this.comboCast.Margin = new System.Windows.Forms.Padding(4);
             this.comboCast.Name = "comboCast";
-            this.comboCast.Size = new System.Drawing.Size(136, 21);
+            this.comboCast.Size = new System.Drawing.Size(201, 28);
             this.comboCast.TabIndex = 7;
             // 
             // comboYear
             // 
+            this.comboYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboYear.FormattingEnabled = true;
-            this.comboYear.Location = new System.Drawing.Point(787, 223);
+            this.comboYear.Location = new System.Drawing.Point(1020, 272);
+            this.comboYear.Margin = new System.Windows.Forms.Padding(4);
             this.comboYear.Name = "comboYear";
-            this.comboYear.Size = new System.Drawing.Size(136, 21);
+            this.comboYear.Size = new System.Drawing.Size(201, 28);
             this.comboYear.TabIndex = 8;
             // 
             // TreeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::NetflixMovies.Properties.Resources.tecnologia_inteligencia_artificial;
-            this.ClientSize = new System.Drawing.Size(935, 470);
+            this.BackgroundImage = global::NetflixMovies.Properties.Resources.tree;
+            this.ClientSize = new System.Drawing.Size(1247, 578);
             this.Controls.Add(this.comboYear);
             this.Controls.Add(this.comboCast);
             this.Controls.Add(this.comboGender);
@@ -152,7 +159,7 @@ namespace NetflixMovies.ui
             this.Controls.Add(this.Implementation);
             this.Controls.Add(this.Show);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TreeForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
