@@ -123,7 +123,6 @@ namespace NetflixMovies.model
                 }
             }
 
-
             if (value == "cast")
             {
                 j = 0;
