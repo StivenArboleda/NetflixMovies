@@ -82,7 +82,7 @@ namespace NetflixMovies.model
             {
                 foreach (Movies movie in movies)
                 {
-                    if (movie.ReleaseYear == year)
+                    if (movie.ReleaseYear > year)
                     {
                         Nodo1.Add(movie);
                     }
