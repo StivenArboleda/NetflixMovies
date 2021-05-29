@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NetflixMovies.model;
+using NetflixMoviesML.ConsoleApp;
 
 namespace NetflixMovies.ui
 {
@@ -128,6 +129,10 @@ namespace NetflixMovies.ui
 
 
                 treeView1.EndUpdate();
+            }
+            if(library.Checked == true)
+            {
+                comboCast.
             }
 
 

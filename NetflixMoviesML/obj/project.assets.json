@@ -3334,27 +3334,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prestamo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Windows 10\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\prestamo\\Documents\\Integrador\\NetflixMovies\\NetflixMoviesML\\NetflixMoviesML.csproj",
+      "projectUniqueName": "C:\\Users\\Windows 10\\Desktop\\NetflixMovies\\NetflixMoviesML\\NetflixMoviesML.csproj",
       "projectName": "NetflixMoviesML",
-      "projectPath": "C:\\Users\\prestamo\\Documents\\Integrador\\NetflixMovies\\NetflixMoviesML\\NetflixMoviesML.csproj",
-      "packagesPath": "C:\\Users\\prestamo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\prestamo\\Documents\\Integrador\\NetflixMovies\\NetflixMoviesML\\obj\\",
+      "projectPath": "C:\\Users\\Windows 10\\Desktop\\NetflixMovies\\NetflixMoviesML\\NetflixMoviesML.csproj",
+      "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Windows 10\\Desktop\\NetflixMovies\\NetflixMoviesML\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\prestamo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -3367,8 +3360,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\prestamo\\Documents\\Integrador\\NetflixMovies\\NetflixMoviesML.Model\\NetflixMoviesML.Model.csproj": {
-              "projectPath": "C:\\Users\\prestamo\\Documents\\Integrador\\NetflixMovies\\NetflixMoviesML.Model\\NetflixMoviesML.Model.csproj"
+            "C:\\Users\\Windows 10\\Desktop\\NetflixMovies\\NetflixMoviesML.Model\\NetflixMoviesML.Model.csproj": {
+              "projectPath": "C:\\Users\\Windows 10\\Desktop\\NetflixMovies\\NetflixMoviesML.Model\\NetflixMoviesML.Model.csproj"
             }
           }
         }
@@ -3392,18 +3385,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.13, 3.1.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
