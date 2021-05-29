@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NetflixMovies.model;
+using NetflixMoviesML.Model;
 
 namespace NetflixMovies.ui
 {
@@ -44,6 +45,7 @@ namespace NetflixMovies.ui
 
         private void Show_Click(object sender, EventArgs e)
         {
+
             treeView1.Nodes.Clear();
             string gender;
             string actor;
@@ -129,13 +131,44 @@ namespace NetflixMovies.ui
 
                 treeView1.EndUpdate();
             }
+            if(library.Checked == true)
+            {
+                var str = comboGender.SelectedItem;
 
+                ModelInput sampleData = new ModelInput()
+                {
+                    Listed_in = @""+str,
+                };
+
+                // Make a single prediction on the sample data and print results
+                var predictionResult = ConsumeModel.Predict(sampleData);
+
+                Console.WriteLine("Using model to make single prediction -- Comparing actual Type with predicted Type from sample data...\n\n");
+                Console.WriteLine($"Listed_in: {sampleData.Listed_in}");
+                Console.WriteLine($"\n\nPredicted Type value {predictionResult.Prediction} \nPredicted Type scores: [{String.Join(",", predictionResult.Score)}]\n\n");
+                Console.WriteLine("=============== End of process, hit any key to finish ===============");
+                Console.ReadKey();
+
+
+            }
 
         }
 
         private void load(List<Movies> movie)
         {
             throw new NotImplementedException();
+        }
+
+        private void library_CheckedChanged(object sender, EventArgs e)
+        {
+            comboCast.Visible = false;
+            comboYear.Visible = false;
+        }
+
+        private void Implementation_CheckedChanged(object sender, EventArgs e)
+        {
+            comboCast.Visible = true;
+            comboYear.Visible = true;
         }
     }
 }

@@ -11,6 +11,7 @@ using NetflixMovies.model;
 
 namespace NetflixMovies.ui
 {
+
     public partial class GridForm : Form
     {
         OpenFileDialog actual;

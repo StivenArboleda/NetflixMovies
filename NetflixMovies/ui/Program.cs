@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using NetflixMovies.model;
+using NetflixMoviesML.Model;
+
 
 namespace NetflixMovies.ui
 

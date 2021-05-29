@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace NetflixMovies.ui
 {
-
     public partial class GraphForm : Form
     {
         OpenFileDialog actual;

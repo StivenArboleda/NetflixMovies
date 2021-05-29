@@ -109,3 +109,6 @@ C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\System.Runtime
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\System.Threading.Channels.xml
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.csproj.CopyComplete
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\MLModel.zip
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\NetflixMoviesML.Model.dll
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\NetflixMoviesML.Model.pdb

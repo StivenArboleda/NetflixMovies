@@ -213,6 +213,12 @@
   <ItemGroup>
     <None Include="Images\tree.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetflixMoviesML.Model\NetflixMoviesML.Model.csproj">
+      <Project>{a5167582-d3ac-4680-affb-6cc1e2c60a25}</Project>
+      <Name>NetflixMoviesML.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -27,11 +27,14 @@ namespace NetflixMoviesML.Model
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"C:\Users\prestamo\AppData\Local\Temp\MLVSTools\NetflixMoviesML\NetflixMoviesML.Model\MLModel.zip";
+            //string modelPath = "..\\..\\..\\..\\NetflixMoviesML.Model\\MLModel.zip";
+            string modelPath = @"C:\Users\Windows 10\AppData\Local\Temp\MLVSTools\NetflixMoviesML\NetflixMoviesML.Model\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
             return predEngine;
         }
+
+    
     }
 }

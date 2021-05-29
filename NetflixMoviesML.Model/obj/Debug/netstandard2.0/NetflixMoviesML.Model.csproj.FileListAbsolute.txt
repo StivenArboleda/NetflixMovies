@@ -1,0 +1,10 @@
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\bin\Debug\netstandard2.0\NetflixMoviesML.Model.deps.json
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\bin\Debug\netstandard2.0\NetflixMoviesML.Model.dll
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\bin\Debug\netstandard2.0\NetflixMoviesML.Model.pdb
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\obj\Debug\netstandard2.0\NetflixMoviesML.Model.csprojAssemblyReference.cache
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\obj\Debug\netstandard2.0\NetflixMoviesML.Model.AssemblyInfoInputs.cache
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\obj\Debug\netstandard2.0\NetflixMoviesML.Model.AssemblyInfo.cs
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\obj\Debug\netstandard2.0\NetflixMoviesML.Model.csproj.CoreCompileInputs.cache
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\obj\Debug\netstandard2.0\NetflixMoviesML.Model.dll
+C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.Model\obj\Debug\netstandard2.0\NetflixMoviesML.Model.pdb

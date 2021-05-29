@@ -67,6 +67,7 @@
             this.Implementation.TabStop = true;
             this.Implementation.Text = "IMPLEMENTACIÓN";
             this.Implementation.UseVisualStyleBackColor = false;
+            this.Implementation.CheckedChanged += new System.EventHandler(this.Implementation_CheckedChanged);
             // 
             // library
             // 
@@ -81,6 +82,7 @@
             this.library.TabStop = true;
             this.library.Text = "LIBRERÍA";
             this.library.UseVisualStyleBackColor = false;
+            this.library.CheckedChanged += new System.EventHandler(this.library_CheckedChanged);
             // 
             // richTextBox1
             // 
