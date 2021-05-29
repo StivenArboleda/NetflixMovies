@@ -17,7 +17,6 @@ namespace NetflixMovies.ui
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("hola");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Principal());

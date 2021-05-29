@@ -1,5 +1,4 @@
-﻿
-namespace NetflixMovies.ui
+﻿namespace NetflixMovies.ui
 {
     partial class Principal
     {

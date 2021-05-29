@@ -14,7 +14,7 @@ namespace NetflixMovies.ui
     public partial class TreeForm : Form
     {
 
-        Tree arbol = new Tree();
+        ClassTree arbol = new ClassTree();
         List<Movies> movie = new List<Movies>();
         Control c = new Control();
 
@@ -47,36 +47,90 @@ namespace NetflixMovies.ui
             treeView1.Nodes.Clear();
             string gender;
             string actor;
-            int year;
+            string year;
 
             gender = comboGender.Text;
             actor = comboCast.Text;
-            year = Int32.Parse(comboYear.Text); 
+            year = "1900";
+            if (comboYear.Text != "")
+            {
+                year = comboYear.Text;
+            }
+
 
             if (Implementation.Checked == true)
             {
-               
-                Dictionary<string, double> giniTree = arbol.giniTree(movie, gender, actor, year);
-                Dictionary<int, string> buildTree = arbol.buildTree(movie, giniTree, gender, actor, year);
 
-                foreach (string nodo in giniTree.Keys) {
+                Dictionary<string, double> giniTree = arbol.giniTree(movie, gender, actor, year);
+                List<Movies>[] buildTree = new List<Movies>[3];
+
+                buildTree[0] = arbol.buildTree(movie, giniTree, gender, actor, year)[0]; // raiz
+                buildTree[1] = arbol.buildTree(movie, giniTree, gender, actor, year)[1]; // nodo1
+                buildTree[2] = arbol.buildTree(movie, giniTree, gender, actor, year)[2]; // nodo 2
+
+                foreach (string nodo in giniTree.Keys)
+                {
                     TreeNode newNode = new TreeNode(nodo);
                     treeView1.Nodes.Add(newNode);
                 }
+                treeView1.Nodes.Add("movies");
 
-                foreach (string child in buildTree.Values)
+                TreeNode[] nodeClasification = treeView1.Nodes
+                              .Cast<TreeNode>()
+                              .Where(r => r.Text == "clasification")
+                              .ToArray();
+
+                TreeNode[] nodeCast = treeView1.Nodes
+                               .Cast<TreeNode>()
+                               .Where(r => r.Text == "cast")
+                               .ToArray();
+
+                TreeNode[] nodeYear = treeView1.Nodes
+                         .Cast<TreeNode>()
+                         .Where(r => r.Text == "year")
+                         .ToArray();
+
+                Dictionary<string, int> partCast = arbol.countCast(buildTree[nodeCast[0].Index]);
+                Dictionary<string, int> partClas = arbol.countClasification(buildTree[nodeClasification[0].Index]);
+                Dictionary<string, int> partYear = arbol.countYear(buildTree[nodeYear[0].Index]);
+
+                foreach (string raiz in partCast.Keys)
                 {
-                    
-                    treeView1.Nodes[2].Nodes.Add(child);
+                    nodeCast[0].Nodes.Add(raiz);
                 }
+
+
+                foreach (string raiz in partClas.Keys)
+                {
+                    nodeClasification[0].Nodes.Add(raiz);
+                }
+
+                foreach (string raiz in partYear.Keys)
+                {
+                    nodeYear[0].Nodes.Add(raiz);
+                }
+
+
+                if (buildTree[2] == null)
+                {
+                    foreach (Movies nodo1 in buildTree[1])
+                    {
+                        treeView1.Nodes[3].Nodes.Add(nodo1.Title);
+                    }
+                }
+                else
+                {
+                    foreach (Movies nodo1 in buildTree[2])
+                    {
+                        treeView1.Nodes[3].Nodes.Add(nodo1.Title);
+                    }
+                }
+
+
+                treeView1.EndUpdate();
             }
 
-            if (library.Checked == true)
-            {
 
-               
-
-            }
         }
 
         private void load(List<Movies> movie)
@@ -84,4 +138,4 @@ namespace NetflixMovies.ui
             throw new NotImplementedException();
         }
     }
- }
+}

@@ -1,5 +1,4 @@
-﻿
-namespace NetflixMovies.ui
+﻿namespace NetflixMovies.ui
 {
     partial class TreeForm
     {
@@ -107,10 +106,10 @@ namespace NetflixMovies.ui
             // treeView1
             // 
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeView1.Location = new System.Drawing.Point(117, 158);
+            this.treeView1.Location = new System.Drawing.Point(88, 142);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(291, 342);
+            this.treeView1.Size = new System.Drawing.Size(891, 374);
             this.treeView1.TabIndex = 5;
             // 
             // comboGender
