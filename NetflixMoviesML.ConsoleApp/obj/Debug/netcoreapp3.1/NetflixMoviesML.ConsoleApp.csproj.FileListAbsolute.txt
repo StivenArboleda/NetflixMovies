@@ -29,3 +29,34 @@ C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\n
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.dll
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.pdb
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.genruntimeconfig.cache
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\MLModel.zip
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.exe
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.deps.json
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.runtimeconfig.json
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.runtimeconfig.dev.json
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.pdb
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.Core.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.Data.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.KMeansClustering.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.PCA.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.StandardTrainers.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.Transforms.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.CpuMath.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Microsoft.ML.DataView.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libLdaNative.so
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libLdaNative.dylib
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\LdaNative.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\LdaNative.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.Model.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\bin\Debug\netcoreapp3.1\NetflixMoviesML.Model.pdb
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.AssemblyInfo.cs
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.csproj.CopyComplete
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.pdb
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMoviesML.ConsoleApp\obj\Debug\netcoreapp3.1\NetflixMoviesML.ConsoleApp.genruntimeconfig.cache

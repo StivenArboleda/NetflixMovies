@@ -143,11 +143,10 @@ namespace NetflixMovies.ui
                 // Make a single prediction on the sample data and print results
                 var predictionResult = ConsumeModel.Predict(sampleData);
 
-                Console.WriteLine("Using model to make single prediction -- Comparing actual Type with predicted Type from sample data...\n\n");
-                Console.WriteLine($"Listed_in: {sampleData.Listed_in}");
-                Console.WriteLine($"\n\nPredicted Type value {predictionResult.Prediction} \nPredicted Type scores: [{String.Join(",", predictionResult.Score)}]\n\n");
-                Console.WriteLine("=============== End of process, hit any key to finish ===============");
-                Console.ReadKey();
+                MessageBox.Show("Using model to make single prediction -- Comparing actual Type with predicted Type from sample data...\n\n" + "\n" + 
+                    $"Listed_in: {sampleData.Listed_in}"+ "\n" +
+                    $"\n\nPredicted Type value {predictionResult.Prediction} \nPredicted Type scores: [{String.Join(",", predictionResult.Score)}]\n\n" + "\n" +
+                    "=============== End of process ===============");
 
 
             }

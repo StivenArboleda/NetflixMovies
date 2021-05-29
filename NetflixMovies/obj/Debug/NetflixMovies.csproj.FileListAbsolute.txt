@@ -112,3 +112,6 @@ C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\obj\Debug\NetflixMovies.
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\MLModel.zip
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\NetflixMoviesML.Model.dll
 C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\bin\Debug\NetflixMoviesML.Model.pdb
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\bin\Debug\MLModel.zip
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\bin\Debug\NetflixMoviesML.Model.dll
+C:\Users\prestamo\Documents\Integrador\NetflixMovies\NetflixMovies\bin\Debug\NetflixMoviesML.Model.pdb
