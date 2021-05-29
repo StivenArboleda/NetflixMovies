@@ -37,7 +37,6 @@
             this.comboGender = new System.Windows.Forms.ComboBox();
             this.comboCast = new System.Windows.Forms.ComboBox();
             this.comboYear = new System.Windows.Forms.ComboBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // Show
@@ -85,10 +84,10 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 126);
+            this.richTextBox1.Location = new System.Drawing.Point(75, 126);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1001, 406);
+            this.richTextBox1.Size = new System.Drawing.Size(921, 406);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
@@ -107,10 +106,10 @@
             // treeView1
             // 
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.treeView1.Location = new System.Drawing.Point(29, 143);
+            this.treeView1.Location = new System.Drawing.Point(88, 142);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(451, 374);
+            this.treeView1.Size = new System.Drawing.Size(891, 374);
             this.treeView1.TabIndex = 5;
             // 
             // comboGender
@@ -143,21 +142,12 @@
             this.comboYear.Size = new System.Drawing.Size(201, 28);
             this.comboYear.TabIndex = 8;
             // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Location = new System.Drawing.Point(516, 143);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(463, 374);
-            this.richTextBox2.TabIndex = 9;
-            this.richTextBox2.Text = "";
-            // 
             // TreeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::NetflixMovies.Properties.Resources.tree;
             this.ClientSize = new System.Drawing.Size(1247, 578);
-            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.comboYear);
             this.Controls.Add(this.comboCast);
             this.Controls.Add(this.comboGender);
@@ -187,6 +177,5 @@
         private System.Windows.Forms.ComboBox comboGender;
         private System.Windows.Forms.ComboBox comboCast;
         private System.Windows.Forms.ComboBox comboYear;
-        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
