@@ -12,9 +12,8 @@ namespace NetflixMoviesML.ConsoleApp
 {
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = "..\\..\\Data\\netflix_titles.csv";
-        private static string MODEL_FILEPATH = "..\\..\\..\\..\\NetflixMoviesML.Model\\MLModel.zip";
-        //private static string MODEL_FILEPATH = Directory.GetCurrentDirectory().Replace("NetflixMoviesML.Model\\bin\\", "NetflixMoviesML.Model\\MLModel.zip");
+        private static string TRAIN_DATA_FILEPATH = @"C:\Users\Windows 10\Desktop\NetflixMovies\NetflixMovies\Data\netflix_titles.csv";
+        private static string MODEL_FILEPATH = @"C:\Users\Windows 10\AppData\Local\Temp\MLVSTools\NetflixMoviesML\NetflixMoviesML.Model\MLModel.zip";
         // Create MLContext to be shared across the model creation workflow objects 
         // Set a random seed for repeatable/deterministic results across multiple trainings.
         private static MLContext mlContext = new MLContext(seed: 1);
