@@ -14,7 +14,6 @@ namespace NetflixMovies.ui
 {
     public partial class TreeForm : Form
     {
-
         ClassTree arbol = new ClassTree();
         List<Movies> movie = new List<Movies>();
         Control c = new Control();
@@ -147,9 +146,28 @@ namespace NetflixMovies.ui
                     $"Listed_in: {sampleData.Listed_in}"+ "\n" +
                     $"\n\nPredicted Type value {predictionResult.Prediction} \nPredicted Type scores: [{String.Join(",", predictionResult.Score)}]\n\n" + "\n" +
                     "=============== End of process ===============");
-
-
             }
+
+            //================ EXPERIMENTO ==================
+
+            int repetitions = 0;
+            string messages = "";
+
+            var stra = comboGender.SelectedItem;
+
+            ModelInput sampleDatas = new ModelInput()
+            {
+                Listed_in = @"" + stra,
+            };
+            var predictionResulte = ConsumeModel.Predict(sampleDatas);
+
+            while (repetitions == 3) //number of repetitions established in the design
+            {
+                messages += $"Predicted Type scores: [{String.Join(",", predictionResulte.Score)}]\n\n";
+                repetitions++;
+            }
+
+            Console.WriteLine(messages);
 
         }
 
